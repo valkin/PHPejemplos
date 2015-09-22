@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style1.css" type="text/css" >
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+<meta charset="UTF-8">
+<title>Bienvenida al Sistema OXI - Registro de Clientes</title>
+	</style> 
+
+</head>
+<body>
+<button onclick="window.location.href='welcome.html'">Volver al inicio</button>
+<button onclick="window.location.href='clienteslist.php'">Lista de clientes</button>
+
+<div id="box">
+<main id="center">
+  <h1>Registro de Clientes OXI</h1>
+    
+<form method="post" action="add_reg.php">
+	<table>
+    <thead>
+	<tr>
+		<th align="right">Nombre:</th> <td><input  type="Text" name="nombre" required><br></td>
+	<tr> </thead>
+		<th align="right">Primer Apellido:</th> <td><input type="Text" name="apellido1" required><br></td>
+	<tr> 
+		<th align="right">Segundo Apellido:</th> <td><input type="Text" name="apellido2"><br></td>
+		<tr>   
+		<th align="right">Teléfono:</th> <td><input type="Text" name="telefono" required><br></td>
+	<tr>	
+		<th align="right">Dirección:</th> <td><input type="Text" name="direccion" required><br></td>
+	<tr>
+		<th align="right">E-mail:</th> <td> <input type="Text" name="email" required><br></td>
+	<tr>
+		<th align="right"><input type="Submit" name="enviar" value="Aceptar información"></th>
+        <th align="right"><input type="Reset" name="reser" value="Limpiar formulario"></th>
+
+    </main>
+	</table>
+</form>
+
+
+
+
+</body>
+
+</html>

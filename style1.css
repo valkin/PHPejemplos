@@ -1,0 +1,128 @@
+@CHARSET "UTF-8";
+
+$green: #27ae60;
+$dark-green: #16a085;
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  }
+
+body {
+  padding: 0em 0em;
+/* background-image: url(http://lh5.googleusercontent.com/-WS8PXb1VNBM/UyoVSVKkppI/AAAAAAAAA2Q/nVNI3smYtcI/w540-h300-no/kids.jpg);*/
+  background: url(images/20_2.jpg) no-repeat center center fixed; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+h1 {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;  
+  color: 578474;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #ff7518;
+  }
+
+#box {
+  margin: auto;
+  width: 30em;
+  @media all and (max-width: 52em) {
+    width: 100%;
+    }
+  height: 1em;
+  white-space: nowrap;
+  }
+#center {
+  vertical-align: middle;
+  display: inline-block;
+  white-space: normal;
+  }
+#box:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  vertical-align: top;
+  display: inline-block;
+  margin-right: -10px;
+  }
+
+table {
+  background-color: white;
+  padding: 1em;
+  &, * {
+    border-color: $green !important;
+    }
+  th {
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    background-color: $green;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      height: 5px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: $dark-green;
+      position: absolute;
+      }
+    }
+  }
+
+button {
+ border: none;
+ background: #ff7518;
+ color: #f2f2f2;
+ padding: 10px;
+ font-size: 18px;
+ border-radius: 5px;
+ position: relative;
+ box-sizing: border-box;
+ transition: all 500ms ease;
+}
+
+button:before {
+ content:'';
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ width: 0px;
+ height: 42px;
+ background: rgba(255,255,255,0.3);
+ border-radius: 5px;
+ transition: all 2s ease;
+}
+
+button:hover:before {
+ width: 100%;
+}
+
+
+
+
+
+
+#credits {
+  text-align: right;
+  color: white;
+  a {
+    color: $dark-green;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      }
+    }
+  }
